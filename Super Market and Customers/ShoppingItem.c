@@ -1,0 +1,27 @@
+#define  _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include  "ShoppingItem.h"
+
+void printItem(const ShoppingItem* pItem)							//Print item
+{
+	printf("Item %s count %d price per item %.2f\n", pItem->name, pItem->count, pItem->price);
+}
+
+ShoppingItem* createItem(const char* name, float price, int count)	//Create new item
+{
+	ShoppingItem* pItem = (ShoppingItem*)malloc(1 * sizeof(ShoppingItem));
+	if (!pItem)
+		return NULL;
+	pItem->name = _strdup(name);
+	pItem->price = price;
+	pItem->count = count;
+	return pItem;
+}
+
+
+void freeItem(ShoppingItem* pItem)									//Free item
+{
+	free(pItem->name);
+}
