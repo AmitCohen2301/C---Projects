@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include "exe1.h"
-#include "exe2.h"
-#include "exe3.h"
+#include "Mult.h"
+#include "Sum.h"
+#include "Festival.h"
 
 void showMenu();
 
