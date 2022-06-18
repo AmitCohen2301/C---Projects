@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include "matrices.h"
-#include "exe1.h"
+#include "Mult.h"
 
 int calcCell(int *matA, int *matB, int rowInA, int colInB, int sizeOfMat)
 {
